@@ -1,0 +1,54 @@
+# Local runtimes and downloaded tools. Do not publish.
+.venv/
+.python/
+opt/
+bin/*
+!bin/.gitkeep
+
+# Personal voice clone: recordings and transcripts stay on this machine.
+voices/mine/*
+!voices/mine/.gitkeep
+*.wav
+*.mp3
+*.flac
+*.m4a
+
+# Model weights and caches. vocab.txt is the only model file that belongs in git.
+*.safetensors
+*.pt
+*.pth
+*.onnx
+*.gguf
+*.bin
+*.tgz
+*.tar.gz
+*.zip
+
+# Build output and logs (logs can contain home paths).
+macos/.build/
+.build/
+.swiftpm/
+DerivedData/
+xcuserdata/
+*.dSYM/
+Glaze.app/
+Gladais.app/
+*.log
+*.pid
+__pycache__/
+*.py[cod]
+
+# User speech settings. May contain a private prompt and phrases.
+config.json
+
+# Editor and OS files.
+.cursor/
+.DS_Store
+.env
+.env.*
+*.pem
+*.key
+id_ed25519
+id_ed25519.pub
+id_rsa
+id_rsa.pub

@@ -1,0 +1,6 @@
+openai-whisper
+torch
+sounddevice
+numpy
+omegaconf
+f5-tts
